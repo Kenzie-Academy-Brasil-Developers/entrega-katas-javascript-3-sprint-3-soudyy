@@ -210,7 +210,7 @@ function kata15() {
     let receiver = 0
     for (let i = 1; i <= 20; i++) {
         receiver += i
-        result.push(receiver)
+        result = receiver
 
     }
 
@@ -226,7 +226,7 @@ function kata16() {
     for (let i = 0; i < sampleArray.length; i++) {
 
         receiver += sampleArray[i]
-        result.push(receiver)
+        result = receiver
 
     }
 
@@ -237,7 +237,7 @@ function kata16() {
 function kata17() {
     const calc = document.getElementById('kata17')
 
-    let result = Infinity
+    let result = sampleArray[1]
 
     for (let i = 0; i < sampleArray.length; i++) {
         if (sampleArray[i] < result) {
@@ -252,7 +252,8 @@ function kata17() {
 function kata18() {
     const calc = document.getElementById('kata18')
 
-    let result = 0
+    let result = sampleArray[1]
+
 
     for (let i = 0; i < sampleArray.length; i++) {
         if (sampleArray[i] > result) {
